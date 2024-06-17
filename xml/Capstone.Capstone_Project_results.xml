@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NewUSer"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.240">
+    <properties></properties>
+
+
+
+            <testcase
+                name="insertintotable"
+                time="1.076"
+                classname="Capstone.Aadhar_Validation">
+            </testcase>
+            <testcase
+                name="readadharfrompropertiesfile"
+                time="0.011"
+                classname="Capstone.Aadhar_Validation">
+            </testcase>
+            <testcase
+                name="createUserinAPIusingproperiesfile"
+                time="2.984"
+                classname="Capstone.Aadhar_Validation">
+            </testcase>
+            <testcase
+                name="select_datafromtable"
+                time="1.094"
+                classname="Capstone.Aadhar_Validation">
+            </testcase>
+            <testcase
+                name="create_table"
+                time="1.075"
+                classname="Capstone.Aadhar_Validation">
+            </testcase>
+</testsuite>

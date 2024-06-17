@@ -1,0 +1,28 @@
+<suite name="reg" verbose="1" parallel="methods">
+
+
+    <test name="NewUSer">
+
+        <parameter name="requrl" value="https://reqres.in/api/users"></parameter>
+        <parameter name="requrldelete" value="https://reqres.in/api/users/2"></parameter>
+
+
+
+
+        <parameter name="name" value="Shashi"></parameter>
+        <parameter name="SSN" value="978645429016"></parameter>
+
+
+
+
+
+
+
+
+
+
+        <classes>
+            <class name="Capstone.Aadhar_Validation" />
+        </classes>
+    </test>
+</suite>
