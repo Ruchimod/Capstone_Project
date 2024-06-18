@@ -169,9 +169,9 @@ public class Aadhar_Validation {
                     GetPhone =result.getString("phone_no");
                 }
 
-                System.out.println("firstname is : "+ adharfromprop+ "   " +  Getlname+ " from  "  + Getrunaddress+ " City  "
+                System.out.println("Name is : "+ Getfname+ "   " +  Getlname+ " from  "  + Getrunaddress+ " City  "
                         +"Aadhar number is :"+ Getaadharnumber
-                        +" GetPhone number is : "+ GetPhone
+                        +" Phone number is : "+ GetPhone
                 );
 
 
