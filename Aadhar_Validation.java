@@ -27,26 +27,13 @@ public class Aadhar_Validation {
 
         String requrl="https://reqres.in/api/users";
         int id;
-//       private ExtentSparkReporter spark;
-//       private ExtentReports extent;
-//        private ExtentTest logger;
+        
         @BeforeClass
         public void setup()
         {
 
             reuse = new Lookup();
         }
-//        public void Openconnection()
-//        {
-//            extent =new ExtentReports();
-//            spark =new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/Reqres11.html");
-//            extent.attachReporter(spark);
-//            extent.setSystemInfo("QA" , "Ruchi");
-//            spark.config().setDocumentTitle("Reqres Website GET API Details Validation");
-//            spark.config().setReportName("Reqres_GET_API_DETAILS");
-//            spark.config().setReportName("Ruchi");
-//            logger=extent.createTest("Validate the Reqres calls");
-//        }
 
    @Test(priority = 1)
     void create_table()
@@ -127,48 +114,6 @@ public class Aadhar_Validation {
         }
 
     }
-
-
-
-//    @Test(priority = 3)
-//    void insertdataintotable()
-//    {
-//        try
-//        {
-//
-//            //URL, DB User Name , DB Password
-//            dbconnection=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306", "root", "Bunny@2024");
-//            if (dbconnection != null)
-//            {
-//                System.out.println("Database server is connected");
-//            }
-//
-//
-//            Statement stamnt = dbconnection.createStatement();
-//            // Use Database where we need to create a new Table
-//
-//            stamnt.execute("use capstone");
-//
-//
-//
-//            stamnt.execute("Insert into new_capstone(Fname,Lname,Aadhar_No,Address,phone_no) values" +
-//                    "('Shashi','Kapoor','978645429016','Bangalore','8794634725') ,\n" +
-//                    "('Rohit','Anand','569656356352','Mumbai','7653221197'),\n" +
-//                    "('Nancy','Priya','675736563563','Durgapur','5646342300'),\n" +
-//                    "('Shipra','Verma','865335657536','Dhanbad','7564624534');");
-//
-//
-//
-//            System.out.println("Record Inserted");
-//
-//        }
-//        catch (Exception e)
-//        {
-//            System.out.println("URL , User name or Password is wrong");
-//        }
-//
-//    }
-
         @Test(priority = 3)
         void readadharfrompropertiesfile()
         {
@@ -257,31 +202,6 @@ public class Aadhar_Validation {
                     .when()
                     .post(requrl);
 
-
-
-
         }
-
-//        @Test(priority = 3,dependsOnMethods = {"createUser"})
-//        void updateUser()
-//        {
-//            HashMap hm= new HashMap();
-//            hm.put("name","Ruchi") ;
-//            hm.put("job","Manager") ;
-//            hm.put("mob","7567046533") ;
-//            hm.put("NewField","Okay") ;
-//
-//
-//
-//            given().contentType("application/json").body(hm)
-//
-//                    .when().put("https://reqres.in/api/users/"+id)
-//                    .then()
-//                    .statusCode(200)
-//                    .log().all();
-//
-//
-//        }
-
     }
 
