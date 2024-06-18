@@ -133,7 +133,7 @@ return CCNo;
 
     public static void Fetch_card_details(List<String> CCNo) {
         if(CCNo!=null) {
-         //s  create_table();
+         create_table();
             for (int i = 1; i < CCNo.size(); i++) {
                 Map<String, String> Dbdata = select_datafromtable(CCNo.get(i));
                 System.out.println(Dbdata+""+i);
