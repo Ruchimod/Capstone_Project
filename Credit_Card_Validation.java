@@ -45,13 +45,12 @@ public class Credit_Card_Validation {
             // Loop for Row Iteration...
             for (int i = 0; i <= lastRow; i++) {
                 Row row = sheet.getRow(i);
-                // Get the last Column which has data
+        
                 int lastCell = row.getLastCellNum();
                 Cell cell = row.getCell(0);
                 String runtimeTestCaseName = cell.getStringCellValue();
 
                 Row RowNew = sheet.getRow(0);
-                //for (int j = 0; j < lastCell; j++) {
                 Cell cellnew = RowNew.getCell(0);
                 String RunTimeCallValue = cellnew.getStringCellValue();
 
